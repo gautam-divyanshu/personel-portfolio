@@ -1,31 +1,34 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between p-5 text-white fixed top-0 w-full bg-transparent backdrop-blur-md drop-shadow-lg">
+      <nav className="fixed top-0 z-10 flex justify-between w-full p-5 text-white bg-transparent backdrop-blur-md drop-shadow-lg">
         <div className="px-2 sm:pl-16 ">
-          <a href="#Home"><img src="letter-d.png" alt="nav brand.png" className="h-8"/></a>
+          <Link to="/">
+            <img src="letter-d.png" alt="nav brand.png" className="h-8" />
+          </Link>
           {/* img is in assets */}
         </div>
         <div>
-          <ul className="flex gap-4 items-center font-light sm:font-bold">
+          <ul className="flex items-center gap-2 font-thin sm:gap-4 sm:font-light">
             <li>
-              <a href="#Home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#About">About</a>
+              <a href="about">About</a>
             </li>
             <li>
-              <a href="#Work">Work</a>
+              <Link to="work">Work</Link>
             </li>
             <div className="pl-4">
-              <li>
+              <li><a  href="contact">
                 <button class="menu__button">
                   <span>
-                    <a href="#Contact">Let's Connect</a>
+                    Let's Connect
                   </span>
                 </button>
+                </a>
               </li>
             </div>
           </ul>

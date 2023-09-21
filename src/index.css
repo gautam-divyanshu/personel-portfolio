@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #141314;
+}
+
 #Home {
   background-image: url("./assets/banner-bg.png");
 }
@@ -13,8 +17,9 @@
 }
 #Work {
   background-image: url("./assets/color-sharp.png");
-  background-size: cover;
   background-color: #141314;
+  background-size: cover;
+  height: fit-content;
 }
 #Contact {
   background-image: url("./assets/color-sharp.png");
@@ -29,9 +34,8 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  font-family: inherit;
   min-width: 62px;
-  height: 36px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,4 +140,131 @@
   50% {
     border-color: transparent;
   }
+}
+
+/* skills cards */
+.card {
+  position: relative;
+  width: 250px;
+  height: 274px;
+  background: rgba(255, 0, 179, 0.525);
+  background: linear-gradient(
+    137deg,
+    rgba(255, 0, 179, 0.34) 0%,
+    rgba(0, 213, 255, 0) 100%
+  );
+  transition: 0.3s ease;
+  border-radius: 30px;
+  overflow: hidden; /* Add this line to hide overflowing content */
+}
+
+.card::after {
+  content: "";
+  background-color: #181818;
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s ease;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  border-radius: 28px;
+}
+
+.card div {
+  position: relative;
+  z-index: 2; /* Add this line to place the h1 elements above the overlay */
+  color: white; /* Set the text color to white */
+  text-align: center; /* Center the text horizontally */
+  /* margin-top: 10%; Adjust the vertical position of the text */
+  /* transform: translateY(-50%); Center the text vertically */
+  font-weight: 600;
+}
+
+.card:hover {
+  filter: drop-shadow(0px 0px 30px rgba(209, 38, 198, 0.388));
+}
+
+/********************************************** project card ******************************/
+
+.project-card {
+  position: relative;
+  background-color: rgb(16 16 16);
+  border: 1px solid rgb(255 255 255 / 5%);
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+}
+
+.project-card:after {
+  content: "";
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 65%;
+  transition: top, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  background: linear-gradient(transparent, mediumslateblue, transparent);
+  box-shadow: 0 0 30px mediumslateblue;
+  opacity: 0;
+}
+
+.project-card:after {
+  top: 65%;
+  opacity: 0;
+}
+
+.project-card:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+
+/***************************** github icon in projects ********************************/
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
 }
