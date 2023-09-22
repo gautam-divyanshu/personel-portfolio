@@ -11,9 +11,6 @@ import Contact from "./components/Contact";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <container>
-      <App />
-    </container> */}
     <BrowserRouter>
       <Navbar />
       <Routes>
