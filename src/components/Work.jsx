@@ -1,7 +1,9 @@
 import React from "react";
-import webImg from "../assets/web project.jpg";
 import ProjectCard from "./ProjectCard";
+import blogApp from "../projects/blog app.mp4";
 import youtube from "../projects/youtube clone.mp4";
+import unsplash from "../projects/unsplash clone.mp4";
+import SpaceTour from "../projects/SpaceTour.mp4";
 
 const Work = () => {
   return (
@@ -11,36 +13,32 @@ const Work = () => {
       </div>
       <div className="flex flex-wrap gap-10 px-3 py-5 justify-evenly basis-96">
         <ProjectCard
-          video={youtube}
-          img={webImg}
-          title="project1"
-          info="Web-based platform that allows users to search, book, and manage
-          car rentals from various providers, providing a convenient and
-          efficient solution for transportation needs."
+          video={blogApp}
+          title="Blog app"
+          info="Mern stack project with cookies and session."
+          tech="#MongoDB #Express #Node #React #Axios"
+          gitLink="https://github.com/gautam-divyanshu/blogApp_react"
         />
         <ProjectCard
           video={youtube}
-          img={webImg}
-          title="project1"
-          info="Web-based platform that allows users to search, book, and manage
-          car rentals from various providers, providing a convenient and
-          efficient solution for transportation needs."
+          title="Youtube Clone"
+          info="Built with youtube api."
+          tech="#react #youtube-api #axios"
+          gitLink="https://github.com/gautam-divyanshu/youtube-clone-React.Js"
         />
         <ProjectCard
-          video={youtube}
-          img={webImg}
-          title="project1"
-          info="Web-based platform that allows users to search, book, and manage
-          car rentals from various providers, providing a convenient and
-          efficient solution for transportation needs."
+          video={unsplash}
+          title="Image Search App"
+          info="Built with Unsplash api."
+          tech="#HTML #CSS #JavaScript #EJS"
+          gitLink="https://github.com/gautam-divyanshu/image-search-app"
         />
         <ProjectCard
-          video={youtube}
-          img={webImg}
-          title="project1"
-          info="Web-based platform that allows users to search, book, and manage
-          car rentals from various providers, providing a convenient and
-          efficient solution for transportation needs."
+          video={SpaceTour}
+          title="Space Tourism Website"
+          info="FrontEnd website."
+          tech="#HTML #CSS #JavaScript"
+          gitLink="https://github.com/gautam-divyanshu/Space-tourism"
         />
       </div>
     </section>

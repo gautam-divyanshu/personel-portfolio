@@ -15,10 +15,10 @@ import github from "../icons/github.png";
 const About = () => {
   return (
     <section id="About" className="h-screen">
-      <div className="pt-24 pb-16 pl-20 pr-48">
+      <div className="pt-24 pb-16 px-7 lg:pr-96">
         <h1 className="text-2xl font-light">Introduction</h1>
         <h1 className="py-2 text-5xl font-extrabold">Overview.</h1>
-        <p>
+        <p className="text-neutral-200">
           I'm a MERN stack developer with expertise in React, Express, MongoDB,
           and Node.js. With a solid grasp of object-oriented concepts and a deep
           understanding of JavaScript, I'm a quick learner who thrives on
@@ -27,10 +27,10 @@ const About = () => {
           challenges. Let's team up to transform your ideas into reality!
         </p>
       </div>
-      <div className="flex justify-center gap-40">
+      <div className="flex justify-center gap-10 flex-wrap">
         <div class="card">
           <div>
-            <h1 className="pt-3">FrontEnd Skills</h1>
+            <h1 className="pt-3 font-light">FrontEnd Skills</h1>
             <div className="flex flex-wrap content-center gap-6 justify-evenly h-60">
               <img className="w-14" src={html} alt="html.ico" />
               <img className="w-14" src={css} alt="css.ico" />
@@ -44,7 +44,7 @@ const About = () => {
         </div>
         <div class="card">
           <div>
-            <h1 className="pt-3">BackEnd Skills</h1>
+            <h1 className="pt-3 font-light">BackEnd Skills</h1>
             <div className="flex flex-wrap content-center gap-2 justify-evenly h-52">
               <img className="w-14" src={node} alt="nodejs.ico" />
               <img className="w-12" src={express} alt="express.ico" />
@@ -54,7 +54,7 @@ const About = () => {
         </div>
         <div class="card">
           <div>
-            <h1 className="pt-3">Other Skills</h1>
+            <h1 className="pt-3 font-light">Other Skills</h1>
             <div className="flex flex-wrap content-center justify-evenly h-52">
               <img className="w-14" src={git} alt="git.ico" />
               <img className="w-14" src={github} alt="github.ico" />
