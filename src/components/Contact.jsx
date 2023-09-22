@@ -37,7 +37,7 @@ const Contact = () => {
             </svg>
           </a>
 
-          <a className="social-link4" href="linkedin.com/in/divyanshu034"  target="_blank" rel="noopener noreferrer">
+          <a className="social-link4" href="https://www.linkedin.com/in/divyanshu034/"  target="_blank" rel="noopener noreferrer">
             <svg
               fill="#fff"
               viewBox="0 0 448 512"
