@@ -10,7 +10,7 @@ const VideoPlayer = ({ videoURL }) => {
         height="100%"
         muted={true} // Mute the video
         controls={true} // Remove controls
-        playing={true}
+        playing={false}
         loop={true}
       />
     </div>

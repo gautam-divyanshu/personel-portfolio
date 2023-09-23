@@ -27,7 +27,7 @@ const About = () => {
           challenges. Let's team up to transform your ideas into reality!
         </p>
       </div>
-      <div className="flex justify-center gap-10 flex-wrap">
+      <div className="flex justify-center gap-10 flex-wrap pb-10">
         <div class="card">
           <div>
             <h1 className="pt-3 font-light">FrontEnd Skills</h1>
