@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <div class="project-card w-full md:w-5/12">
       <div class="project-card-content relative">
         {/* <img src={props.img} alt="" /> */}
-        <VideoPlayer videoURL={props.video} />
+          <VideoPlayer videoURL={props.video} />
 
         <div className="flex justify-between">
           <h1 className="py-2 text-2xl font-bold">{props.title}</h1>

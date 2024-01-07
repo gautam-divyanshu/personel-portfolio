@@ -8,22 +8,26 @@ body {
 
 #Home {
   background-image: url("./assets/banner-bg.png");
+  background-repeat: repeat-x;
 }
 
 #About {
   background-image: url("./assets/color-sharp.png");
-  background-size:cover;
+  background-size:contain;
+  background-repeat: repeat-y;
   background-color: #141314;
 }
 #Work {
   background-image: url("./assets/color-sharp.png");
   background-color: #141314;
-  background-size: cover;
+  background-size:contain;
+  background-repeat: repeat-y;
   height: fit-content;
 }
 #Contact {
   background-image: url("./assets/color-sharp.png");
-  background-size: cover;
+  background-size:contain;
+  background-repeat: repeat-y;
   background-color: #141314;
 }
 

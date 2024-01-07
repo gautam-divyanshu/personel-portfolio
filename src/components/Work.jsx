@@ -4,6 +4,7 @@ import blogApp from "../projects/blog app.mp4";
 import youtube from "../projects/youtube clone.mp4";
 import unsplash from "../projects/unsplash clone.mp4";
 import SpaceTour from "../projects/SpaceTour.mp4";
+import workout from "../projects/workout.mp4";
 
 const Work = () => {
   return (
@@ -12,10 +13,17 @@ const Work = () => {
         <h1 className="py-2 text-5xl font-extrabold">Projects.</h1>
       </div>
       <div className="flex flex-wrap gap-10 px-3 py-5 justify-evenly basis-96">
+      <ProjectCard
+          video={workout}
+          title="Workout App"
+          info="Mern stack project with JWT Authentication."
+          tech="#MongoDB #Express #Node #React #JWT"
+          gitLink="https://github.com/gautam-divyanshu/workoutApp"
+        />
         <ProjectCard
           video={blogApp}
           title="Blog app"
-          info="Mern stack project with cookies and session."
+          info="Mern stack project"
           tech="#MongoDB #Express #Node #React #Axios"
           gitLink="https://github.com/gautam-divyanshu/blogApp_react"
         />
