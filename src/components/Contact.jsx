@@ -1,5 +1,6 @@
 import React from "react";
 import profilePic from "../assets/profile.jpg";
+import resume from "./Divyanshu_portfolio.pdf";
 
 const Contact = () => {
   return (
@@ -11,7 +12,12 @@ const Contact = () => {
 
         <p className="info">gautamdivyanshu11@gmail.com</p>
         <div className="linkcard mb-5">
-          <a className="social-link1" href="https://www.instagram.com/divyanshu_gautam8/" target="_blank" rel="noopener noreferrer">
+          <a
+            className="social-link1"
+            href="https://www.instagram.com/divyanshu_gautam8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -26,7 +32,12 @@ const Contact = () => {
               ></path>
             </svg>
           </a>
-          <a className="social-link2" href="https://github.com/gautam-divyanshu"  target="_blank" rel="noopener noreferrer">
+          <a
+            className="social-link2"
+            href="https://github.com/gautam-divyanshu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               viewBox="0 0 496 512"
               height="1em"
@@ -37,7 +48,12 @@ const Contact = () => {
             </svg>
           </a>
 
-          <a className="social-link4" href="https://www.linkedin.com/in/divyanshu034/"  target="_blank" rel="noopener noreferrer">
+          <a
+            className="social-link4"
+            href="https://www.linkedin.com/in/divyanshu034/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               fill="#fff"
               viewBox="0 0 448 512"
@@ -48,9 +64,12 @@ const Contact = () => {
             </svg>
           </a>
         </div>
-        {/* <button class="border py-2">
-          <span>Resume</span>
-        </button> */}
+
+        <button className="border py-2">
+          <a href={resume} download>
+            <span>Download Resume</span>
+          </a>
+        </button>
       </div>
     </section>
   );
